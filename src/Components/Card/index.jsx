@@ -57,7 +57,7 @@ function Card ({src,details,width,height,link,github}) {
           <span>
             Demo Account:<br/>
             Email: demo@example.com<br/>
-            Password: demo123
+            Password: demouser123
           </span>
           </p>
         )}
