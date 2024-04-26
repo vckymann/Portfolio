@@ -43,7 +43,7 @@ function Contact() {
             </div>
             <div className="relative flex justify-center pb-2">
                 <ScrollLink to="home" spy={true} smooth={true} duration={10} activeClass="active">
-                <Button className="bg-purple-700 absolute top-[-22px] rounded-sm right-[48%]"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevrons-up"><path d="m17 11-5-5-5 5"/><path d="m17 18-5-5-5 5"/></svg></Button>
+                <Button className="bg-purple-700 absolute top-[-22px] rounded-sm ml-[3.7rem]"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevrons-up"><path d="m17 11-5-5-5 5"/><path d="m17 18-5-5-5 5"/></svg></Button>
                 </ScrollLink>
                 <div className="flex mt-12 gap-6">
                 <A href="https://www.instagram.com/vckymaan/" target="_blank">
