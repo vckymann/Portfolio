@@ -19,9 +19,9 @@ function Home() {
         <div className="line"></div>
       </div>
       <div className="flex flex-col items-center gap-2">
+        <Text as={"h2"} className="text-white text-5xl font-bold text-center">Hi Im</Text>
         <Text as={"h2"} className="text-5xl font-bold text-center text-purple-600">Vikas Singh Mann</Text>
         <Text as={"h2"} className="text-white text-5xl font-bold text-center leading-[3.2rem]">A Front End Developer</Text>      
-        <Text as={"h2"} className="text-white text-5xl font-bold text-center">Hi Im</Text>
         <div className="flex items-center gap-4">          
       <A className="relative" target="_blank" href="https://github.com/vckymann">
         <svg height={32} className="fill-white hover:fill-purple-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
