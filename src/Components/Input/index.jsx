@@ -1,7 +1,6 @@
 import React, { useId } from 'react';
 
 const Input  = React.forwardRef(function Input({
-    label,
     type = "text",
     className = "",
     ...props
@@ -9,7 +8,7 @@ const Input  = React.forwardRef(function Input({
     const id = useId();
     return (
         <>
-            <input id={id} ref={ref} type={type} className={className} {...props} placeholder={label} />
+            <input id={id} ref={ref} type={type} className={className} {...props} />
         </>
     )
 })
