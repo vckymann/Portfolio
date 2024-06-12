@@ -6,9 +6,9 @@ function Card ({src,details,link,github}) {
   
   return (
     <>
-      <div className={`flex flex-col lg:flex-row items-center hover:scale-105 transition-all duration-200 ease-in bg-black p-4 rounded-md gap-12`}>
+      <div className={`flex flex-col max-w-96 sm:max-w-[60rem] lg:flex-row items-center hover:scale-105 transition-all duration-200 ease-in bg-black p-4 rounded-md gap-12`}>
         <A href={link} target="_blank">
-        <Img className="max-w-[30rem] rounded-md" src={src} alt="" />
+        <Img className="max-w-[20rem] sm:max-w-[30rem] rounded-md" src={src} alt="" />
         </A>
         <div className="flex flex-col gap-5">
           <Text className="text-center font-bold text-purple-600 text-xl">{details.name}</Text>
