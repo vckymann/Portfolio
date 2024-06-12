@@ -30,9 +30,7 @@ export default Card;
 
 Card.propTypes = {
   src: PropTypes.string.isRequired,
-  details: PropTypes.object.isRequired,
-  width: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired,
+  details: PropTypes.object.isRequired,  
   link: PropTypes.string.isRequired,
   github: PropTypes.string.isRequired
 }
