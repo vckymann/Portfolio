@@ -6,7 +6,7 @@ function Card ({src,details,link,github}) {
   
   return (
     <>
-      <div className={`flex items-center hover:scale-105 transition-all duration-200 ease-in bg-black p-4 rounded-md gap-12`}>
+      <div className={`flex flex-col lg:flex-row items-center hover:scale-105 transition-all duration-200 ease-in bg-black p-4 rounded-md gap-12`}>
         <A href={link} target="_blank">
         <Img className="max-w-[30rem] rounded-md" src={src} alt="" />
         </A>
