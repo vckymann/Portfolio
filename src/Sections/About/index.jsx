@@ -1,14 +1,11 @@
 import { Element } from "react-scroll"
-import { useMediaQuery } from "@mui/material";
 import { Text, Button, Img } from "../../Components";
 
 function About() {
 
-    const snap = useMediaQuery("(min-width: 1024px)");
-
   return (
     <Element id="about" name="about" className="">
-        <section className={`${snap ? "snap" : ""} w-full text-white font-poppins`}>
+        <section className={`w-full text-white font-poppins`}>
             <div className="w-full h-full max-w-[133rem] mx-auto flex flex-col min-h-screen">
             <div className="w-full flex flex-col items-center pt-32 gap-12 md:flex-row md:items-start md:justify-center md:gap-32">
                 <div className="flex justify-center mt-4">
@@ -26,10 +23,13 @@ function About() {
                     <span className="actual-text">&nbsp;TECHSTACK&nbsp;</span>
                     <span aria-hidden="true" className="hover-text">&nbsp;TECHSTACK&nbsp;</span>
                 </Button>
-                <div className="grid grid-cols-1 gap-4 place-items-center sm:grid-cols-3 sm:gap-2 mt-10">
-                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=html,css,js" alt="html-5--v1"/>
-                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=tailwind,react" alt="" />                    
-                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=nodejs,express,postgres" alt="" />
+                <div className="grid grid-cols-2 gap-8 place-items-center sm:grid-cols-6 sm:gap-10 mt-10">
+                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=html,css" alt="html-5--v1"/>
+                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=tailwindcss,materialui" alt="" />
+                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=javascript,react" alt="" />                    
+                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=nodejs,express" alt="" />
+                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=postgres,supabase" alt="" />
+                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=git,vercel" alt="" />
                 </div>
             </div>
             </div>

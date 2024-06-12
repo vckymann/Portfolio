@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types";
 const A = ({
     href,
     children,
@@ -12,3 +12,9 @@ const A = ({
 }
 
 export default A;
+
+A.propTypes = {
+    href: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired,
+    className: PropTypes.string
+}

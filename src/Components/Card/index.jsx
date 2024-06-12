@@ -1,74 +1,38 @@
-import { useState } from "react";
-import Img from "../Img";
+import { Text, Button, A, Img } from "../../Components";
+import PropTypes from "prop-types";
 
-function Card ({src,details,width,height,link,github}) {
+
+function Card ({src,details,link,github}) {
   
-  const [show,setShow] = useState(false);  
-
   return (
     <>
-    {src && details ? (
-      <div className={`${width} ${height} max-w-96 0 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-purple-600/[0.3] bg-black/90 dark:border-white/[0.2] border-black/[0.1] rounded-xl border px-6`}>
-          <>
-          <div className="w-full flex justify-center items-center pt-6">
-          <Img
-          src={src}
-          alt="thumbnail"
-          className="w-full h-auto object-cover rounded-xl group-hover/card:shadow-xl"
-          />
-        </div>
-        <div className="flex justify-evenly gap-3 mt-16 pb-5">
-                <a target="_blank" href={link}>
-                <button               
-                  className="w-28 h-7 text-nowrap rounded-xl bg-purple-700 text-xs font-bold hover:opacity-80"
-                  >
-                  Live              
-                </button>
-                  </a>
-                <button              
-                className="w-28 h-7 text-nowrap rounded-xl bg-purple-700 text-xs font-bold hover:opacity-80"
-                onClick={() => {
-                  setShow(!show)
-                  setTimeout(() => {
-                    setShow(false)
-                  },5000)
-                }}
-                >
-                  Details
-                </button>              
-                <a target="_blank" href={github}>
-                <button               
-                  className="w-28 h-7 text-nowrap rounded-xl bg-purple-700 text-xs font-bold hover:opacity-80"
-                  >
-                  Source
-                </button>
-                  </a>                 
-        </div>
-        {show && (
-          <p          
-          className="w-full text-center text-xs mt-4 flex flex-col gap-y-3 pb-4"
-          >
-          <span>
-          Project Name: {details.name}
-          </span>
-          <span>
-          {details.description}
-          </span>
-          <span>
-            Demo Account:<br/>
-            Email: demo@example.com<br/>
-            Password: demouser123
-          </span>
-          </p>
-        )}
-        </>
+      <div className={`flex items-center hover:scale-105 transition-all duration-200 ease-in bg-black p-4 rounded-md gap-12`}>
+        <A href={link} target="_blank">
+        <Img className="max-w-[30rem] rounded-md" src={src} alt="" />
+        </A>
+        <div className="flex flex-col gap-5">
+          <Text className="text-center font-bold text-purple-600 text-xl">{details.name}</Text>
+          <Text className="max-w-96">{details.description}</Text>
+          <Text className="text-end text-purple-400 text-[0.8rem]">Demo Account<br/>demo@example.com<br/>demouser123</Text>
+          <div className="flex justify-center gap-3">
+          <A href={link} target="_blank"><Button className="px-2 bg-purple-700 rounded font-semibold hover:opacity-80">Live</Button></A>
+          <A href={github} target="_blank">
+            <Button className="px-2 bg-purple-700 rounded font-semibold hover:opacity-80">Github</Button>
+          </A>
           </div>
-        ) : (
-          null
-        )}
-
+        </div>
+      </div>
     </>
   ) 
 }
 
 export default Card;
+
+Card.propTypes = {
+  src: PropTypes.string.isRequired,
+  details: PropTypes.object.isRequired,
+  width: PropTypes.string.isRequired,
+  height: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired
+}

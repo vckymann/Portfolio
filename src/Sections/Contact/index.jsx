@@ -1,8 +1,7 @@
 import { Element } from "react-scroll";
 import scroll from "react-scroll";
 import { useState } from "react";
-import { useMediaQuery } from "@mui/material";
-import { Text, Input, Button, A, Img } from "../../Components";
+import { Text, Input, Button } from "../../Components";
 
 const ScrollLink = scroll.Link;
 
@@ -12,8 +11,6 @@ function Contact() {
     const [message, setMessage] = useState("");
     const [mail, setMail] = useState("");
     const [name, setName] = useState("");
-
-    const snap = useMediaQuery("(min-width: 1024px)");
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -28,7 +25,7 @@ function Contact() {
 
   return (
     <Element id="contact" name="contact" className="">
-        <section className={`${snap ? "snap" : ""} w-full text-white font-poppins min-h-screen h-full`}>
+        <section className={`w-full text-white font-poppins min-h-screen h-full`}>
             <div className="w-full max-w-[133rem] mx-auto bg-purple-700 pt-14 md:pt-0">
                 <div className="clip3 w-full h-full bg-black pb-32">
                     <form onSubmit={handleSubmit} className="flex flex-col max-w-96 mx-auto pt-48 gap-3">
@@ -42,19 +39,11 @@ function Contact() {
                 </div>
             </div>
             <div className="relative flex justify-center pb-2">
-                <ScrollLink to="home" spy={true} smooth={true} duration={10} activeClass="active">
-                <Button className="bg-purple-700 absolute top-[-22px] rounded-sm ml-[3.7rem]"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevrons-up"><path d="m17 11-5-5-5 5"/><path d="m17 18-5-5-5 5"/></svg></Button>
+                <ScrollLink to="home" spy={true} smooth={true} duration={10} activeClass="active" className="absolute top-[-18px]">
+                <Button className="bg-purple-700 rounded-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevrons-up">
+                    <path d="m17 11-5-5-5 5"/><path d="m17 18-5-5-5 5"/></svg></Button>
                 </ScrollLink>
-                <div className="flex mt-12 gap-6">
-                <A href="https://www.instagram.com/vckymaan/" target="_blank">
-                    <Img width="40" height="40" src="/instagram.png" alt="instagram"/>
-                </A>
-                <A href="https://www.facebook.com/people/Vicky-Mann/pfbid0Urs1fdo8ajRcTWcbn3Qo1ZehRSV4LNnn16mu9fUP2Ct4DSV3GmsSP7N19cRg3Uywl/?mibextid=sCpJLy" target="_blank">
-                    <Img width="40" height="40" src="/facebook.png" alt="facebook"/></A>
-                <A href="https://twitter.com/vckymann" target="_blank">
-                    <Img width="40" height="40" src="/twitter.png" alt="twitter"/>
-                </A>                
-                </div>
             </div>
         </section>
     </Element>

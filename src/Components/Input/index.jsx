@@ -1,4 +1,6 @@
 import React, { useId } from 'react';
+import PropTypes from "prop-types";
+
 
 const Input  = React.forwardRef(function Input({
     type = "text",
@@ -14,3 +16,8 @@ const Input  = React.forwardRef(function Input({
 })
 
 export default Input
+
+Input.propTypes = {
+    type: PropTypes.string,
+    className: PropTypes.string
+}

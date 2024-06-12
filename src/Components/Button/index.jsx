@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 
 const Button = ({
     children,
@@ -13,3 +14,8 @@ const Button = ({
 }
 
 export default Button
+
+Button.propTypes = {
+    children: PropTypes.node.isRequired,
+    className: PropTypes.string
+}

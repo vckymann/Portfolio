@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Text = ({children, className, as ,...restProps}) => {
     const Component = as || 'p';
     
@@ -7,3 +9,9 @@ const Text = ({children, className, as ,...restProps}) => {
 }
 
 export default Text;
+
+Text.propTypes = {
+    children: PropTypes.node.isRequired,
+    className: PropTypes.string,
+    as: PropTypes.string
+}
