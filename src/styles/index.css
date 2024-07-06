@@ -16,14 +16,12 @@ html, body {
 }
 
 body {
-  display: table;
   width: 100%;
   height: 100%;
-  background-color: #171717;
+  background-color: #020c1b;
   line-height: 1.6;
   position: relative;
   font-family: sans-serif;
-  overflow-x: hidden;
 }
 
 
@@ -34,10 +32,11 @@ body {
 /* navbar styling */
 
 .active {
-  background-color: purple;
+  background-color: #64ffda;
   border-radius: 20px;
   padding: 5px 25px 5px 25px;
   transition: all 0.4s ease;
+  color: #0a192f;
 }
 
 /* clipped elements */
@@ -78,7 +77,7 @@ body {
   height: 100%;
   top: 0;
   left: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(97, 251, 215,);
   overflow: hidden;
 }
 
@@ -164,8 +163,8 @@ body {
 /*3d button */
 
 .btn {
-  --color1: rgb(147, 51, 234);
-  --color2: rgb(126, 34, 206);
+  --color1: rgb(97,251,215);
+  --color2: rgb(97,251,215);
   perspective: 1000px;
   padding: 1rem 2rem;
   background: linear-gradient(var(--color1), var(--color2));
@@ -176,8 +175,7 @@ body {
   font-family:poppins;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #fff;
-  text-shadow: 0 10px 10px #000;
+  color: #0a192f;
   cursor: pointer;
   transform: rotateX(70deg) rotateZ(30deg);
   transform-style: preserve-3d;
@@ -225,8 +223,8 @@ body {
 
 .button {
   --border-right: 6px;
-  --text-stroke-color: rgba(255,255,255,0.6);
-  --animation-color: rgb(126, 34, 206);
+  --text-stroke-color: rgba(97, 251, 215, 0.9);
+  --animation-color: rgb(97, 251, 215);
   --fs-size: 2em;
   letter-spacing: 3px;
   text-decoration: none;
@@ -237,6 +235,7 @@ body {
   color: transparent;
   -webkit-text-stroke: 0.5px var(--text-stroke-color);
 }
+
 
 .hover-text {
   position: absolute;
