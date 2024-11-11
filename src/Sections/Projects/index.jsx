@@ -13,6 +13,7 @@ function Projects() {
                     </div>
                     <Card src={"/project1.png"} details={{name:"Stealth",description:"Stealth is an innovative online shoe store designed to provide customers with a seamless shopping experience."}} link={"https://stealth-jet.vercel.app"} github={"https://github.com/vckymann/Stealth"} number={1} tech={["React","Appwrite","Tailwind","PostgresSQL"]}/>
                     <Card src={"/project2.png"} details={{name:"MapUp",description:"MapUp is a web application that allows users to search for places, establish the quickest routes between them, track and store user's trips."}} link={"https://map-up-eta.vercel.app"} github={"https://github.com/vckymann/MapUp"} number={2} tech={["React","supabase","MaterialUi","Tailwind"]}/>
+                    <Card  src={"/project3.png"} details={{name:"Savorspot", description:"SavorSpot is a responsive restaurant website with a dynamic menu, advanced filters, and a seamless cart system, built using React, Redux, and Supabase.", link:"https://savorspot.vercel.app", github:"https://github.com/vckymann/Savorspot"}} number={3} tech={["React","ShadcnUI","Tailwind","Supabase"]}/>
                 </div>
             </div>
         </section>
