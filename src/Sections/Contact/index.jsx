@@ -7,8 +7,8 @@ const ScrollLink = scroll.Link;
 function Contact() {
 
   return (
-    <Element id="contact" name="contact" className="">
-        <section className={`w-full text-white font-poppins h-full min-h-screen relative`}>
+      <section className={`w-full text-white font-poppins h-full min-h-screen relative`}>
+            <Element id="contact" name="contact" className="">
             <div className="relative w-full max-w-[133rem] mx-auto bg-green pt-14 md:pt-0">
                 <div className="clip3 w-full h-full bg-dark_navy pb-6">
                     <div className="flex flex-col max-w-96 mx-auto items-center pt-48 gap-3">
@@ -40,8 +40,8 @@ function Contact() {
                     <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin stroke-lightest_slate hover:stroke-green"><title>LinkedIn</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                     </A>
                 </div>          
+            </Element>
         </section>
-    </Element>
   )
 }
 
