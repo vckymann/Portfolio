@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         poppins : ["Poppins",'sans-serif'],
+        italian: ["Italianno"]
       },
       transitionDuration: {
         '2000': '2000ms'
