@@ -23,13 +23,13 @@ function About() {
                     <span className="actual-text">&nbsp;TECHSTACK&nbsp;</span>
                     <span aria-hidden="true" className="hover-text">&nbsp;TECHSTACK&nbsp;</span>
                 </Button>
-                <div className="grid grid-cols-2 gap-8 place-items-center sm:grid-cols-3 lg:grid-cols-6 sm:gap-10 mt-10">
-                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=html,css" alt="html-5--v1"/>
-                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=tailwindcss,materialui" alt="" />
-                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=javascript,react" alt="" />                    
+                <div className="grid grid-cols-2 gap-8 place-items-center sm:grid-cols-3 lg:grid-cols-6 sm:gap-6 mt-10">
+                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=html,css,tailwindcss" alt="html-5--v1"/>
+                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=javascript,react" alt="" />
+                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=typescript,nextjs" alt="" />                    
                     <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=nodejs,express" alt="" />
-                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=postgres,supabase" alt="" />
                     <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=git,vercel" alt="" />
+                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=postgres,supabase,mongodb" alt="" />
                 </div>
             </div>
             </div>
