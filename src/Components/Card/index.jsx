@@ -2,7 +2,7 @@ import { Text, A, Img } from "../../Components";
 import PropTypes from "prop-types";
 
 
-function Card ({src,details,link,github, number,tech}) {
+function Card ({src,details,link,github, number,tech,caseStudy}) {
   
   return (
     <>
@@ -20,6 +20,9 @@ function Card ({src,details,link,github, number,tech}) {
               </A>
               <A href={link} target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-square-arrow-out-up-right hover:stroke-green"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+              </A>
+              <A href={caseStudy} target="_blank" className={"hover:text-green"}>
+              Case Study
               </A>
             </div>
           </div>
@@ -39,5 +42,6 @@ Card.propTypes = {
   link: PropTypes.string.isRequired,
   github: PropTypes.string.isRequired,
   number: PropTypes.number,
-  tech: PropTypes.array
+  tech: PropTypes.array,
+  caseStudy: PropTypes.string
 }
