@@ -6,7 +6,7 @@ function Card ({src,details,link,github, number,tech,caseStudy}) {
   
   return (
     <>
-      <div className={`flex justify-between ${number === 3 ? `lg:gap-[19rem]` : `lg:gap-[20rem]`} relative`}>
+      <div className={`flex justify-between ${number === 3 ? `lg:gap-[19rem]` : `lg:gap-[20rem]`} relative my-4`}>
       {number % 2 === 0 ?  null : <A href={link} target="_blank"><Img className="max-w-[30rem] hidden lg:block rounded-lg" src={src} alt="" /></A>}
         <div className={`flex flex-col bg-light_navy p-10 items-center lg:p-0 lg:bg-transparent ${number % 2 === 0 ? 'lg:items-start' : 'lg:items-end'}`}>
           <Text as={"h2"} className="text-2xl font-bold text-lightest_slate">{details.name}</Text>

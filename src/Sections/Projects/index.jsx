@@ -6,7 +6,7 @@ function Projects() {
     <Element id="projects" name="projects" className="">
         <section className={`text-white font-poppins min-h-screen py-40`}>
             <div className="h-full">
-                <div className="flex flex-col items-center h-full gap-14 justify-center p-4 max-w-[60rem] mx-auto">       
+                <div className="flex flex-col items-center h-full gap-16 justify-center p-4 max-w-[60rem] mx-auto">       
                     <div className="w-full flex items-center gap-6 mr-10">
                       <h2 className="text-3xl font-bold text-lightest_slate pl-6 lg:pl-0">Projects</h2>
                       <div className="w-52 h-[0.1px] bg-lightest_slate"></div>
