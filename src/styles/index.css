@@ -43,12 +43,13 @@ body {
 /* clipped elements */
 
 .clip {
-  background-image: url(/profile.jpg);
+  background-image: url(/kimmich.JPG);
   background-size: cover;
   background-position-x: center;
-  background-position-y: center;
+  background-position-y: -215px;
+  background-color: #64ffda;
   background-repeat: no-repeat;
-  clip-path: polygon(17% 0, 84% 0, 100% 50%, 83% 100%, 19% 100%, 0% 50%);
+  clip-path: polygon(15% 0, 84% 0, 100% 50%, 83% 100%, 19% 100%, 0% 50%);
   transition: all 0.5s ease;
 }
 .clip:hover {
