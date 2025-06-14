@@ -24,12 +24,30 @@ function About() {
                     <span aria-hidden="true" className="hover-text">&nbsp;TECHSTACK&nbsp;</span>
                 </Button>
                 <div className="grid grid-cols-2 gap-8 place-items-center sm:grid-cols-3 lg:grid-cols-6 sm:gap-6 mt-10">
-                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=html,css,tailwindcss" alt="html-5--v1"/>
-                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=javascript,react" alt="" />
-                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=typescript,nextjs" alt="" />                    
-                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=nodejs,express" alt="" />
-                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=git,vercel" alt="" />
-                    <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=postgres,supabase,mongodb" alt="" />
+                    <div>
+                        <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=html,css,tailwindcss" alt="html-5--v1"/>
+                        <p htmlFor="html-5--v1" className="text-xs mt-1 text-center">HTML5, CSS, TAILWINDCSS</p>
+                    </div>
+                    <div>
+                        <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=javascript,react" alt="" />
+                        <p htmlFor="html-5--v1" className="text-xs text-center mt-1">JAVASCRIPT, REACT</p>
+                    </div>
+                    <div>
+                        <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=typescript,nextjs" alt="" />                    
+                        <p htmlFor="html-5--v1" className="text-xs text-center mt-1">TYPESCRIPT, NEXTJS</p>
+                    </div>
+                    <div>
+                        <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=nodejs,express" alt="" />
+                        <p htmlFor="html-5--v1" className="text-xs mt-1 text-center">NODEJS, EXPRESS</p>
+                    </div>
+                    <div>
+                        <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=git,vercel" alt="" />
+                        <p htmlFor="html-5--v1" className="text-xs text-center mt-1">GIT, VERCEL</p>
+                    </div>
+                    <div>
+                        <Img className="hover:-translate-y-2.5 transition-all duration-300 ease-in" src="https://skillicons.dev/icons?i=postgres,supabase,mongodb" alt="" />
+                        <p htmlFor="html-5--v1" className="text-xs mt-1 text-center">POSTGRES, SUPABASE, MONGODB</p>
+                    </div>
                 </div>
             </div>
             </div>
