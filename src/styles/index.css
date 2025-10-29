@@ -43,10 +43,11 @@ body {
 /* clipped elements */
 
 .clip {
-  background-image: url(/kimmich.JPG);
+  background-image: url(/avatar.jpg);
   background-size: cover;
   background-position-x: center;
-  background-position-y: -215px;
+  background-position-y: center;
+  zoom: 100%;
   background-color: #64ffda;
   background-repeat: no-repeat;
   clip-path: polygon(15% 0, 84% 0, 100% 50%, 83% 100%, 19% 100%, 0% 50%);
